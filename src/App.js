@@ -1,15 +1,22 @@
 import React from "react";
-// import faker from "faker";
-import "./App.css";
-import TopBar from "./components/TopBar";
+import styled from "styled-components";
+import Header from "./components/Header/Header";
 import Container from "./components/Container";
+
+const Main = styled.div`
+  height: auto;
+  max-width: 120rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <TopBar />
+    <Main>
+      <Header />
       <Container />
-    </div>
+    </Main>
   );
 }
 
