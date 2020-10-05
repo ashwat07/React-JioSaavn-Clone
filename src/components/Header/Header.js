@@ -85,11 +85,10 @@ const Form = styled.form`
 
 const SearchWrapper = styled.div`
   position: absolute;
-  left: ${(props) =>
-    props.isFocus ? "-30%" : "5%"};
-  right: ${(props) =>
-    props.isFocus ? "-30%" : "5%"};
-  box-shadow: ${(props) => props.isFocus ? "0 20px 30px 10px rgba(0,0,0,.1)": "none"};
+  left: ${(props) => (props.isFocus ? "-30%" : "5%")};
+  right: ${(props) => (props.isFocus ? "-30%" : "5%")};
+  box-shadow: ${(props) =>
+    props.isFocus ? "0 20px 30px 10px rgba(0,0,0,.1)" : "none"};
   top: 10px;
   font-size: 0.8rem;
   display: inline-block;
@@ -101,40 +100,48 @@ const SearchWrapper = styled.div`
 
 const Input = styled.input`
   outline: none;
-	border: 0px;
-	height: 40px;
-	padding: 0 15px;
-	width: 100%;
-	display: block;
-	box-sizing: border-box;
+  border: 0px;
+  height: 40px;
+  padding: 0 15px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
   overflow: hidden;
-  border-bottom: ${(props) => props.isFocus ? "1px solid #e2e2e2": "none"};
+  border-bottom: ${(props) => (props.isFocus ? "1px solid #e2e2e2" : "none")};
+`;
+
+const Placeholders = styled.span`
+  position: absolute;
+  top:10px;
+  left: ${(props) =>
+    props.isFocus ? "5px" : "40%"};
+  transition: left .3s ease-in-out;
+`;
+
+const SearchIcon = styled(FaSearch)`
+  cursor: inherit;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out
+`;
+
+const Label = styled.label`
+  cursor: inherit;
+  margin-left: 0.5rem;
+  opacity: ${(props) =>
+    props.isFocus ? "0" : "1"};
+  transition: opacity .3s ease-in-out
 `;
 
 const SearchList = styled.div`
   width: 100%;
   /* max-height: 800px; */
   background-color: #fff;
-  height: ${(props) => props.isFocus ? "170px": "0px"};
-  transition: all .3s ease-in-out .3s;
+  height: ${(props) => (props.isFocus ? "170px" : "0px")};
+  transition: all 0.3s ease-in-out 0.3s;
   z-index: 100;
 `;
 
-const SearchIcon = styled(FaSearch)`
-  cursor: inherit;
-  opacity: 0.5;
-`;
 
-const Label = styled.label`
-  cursor: inherit;
-  margin-left: 0.5rem;
-  /* transform: ${(props) =>
-    props.isFocus ? "translateX(-30rem)" : "none"};
-  transition: ${(props) =>
-    props.isFocus ? ".4s ease-in-out" : "none"};
-  opacity: ${(props) =>
-    props.isFocus ? "0" : "1"}; */
-`;
 
 const HeaderTertiary = styled.div`
   display: flex;
@@ -173,6 +180,17 @@ const NavTertiary = styled(NavPrimary)`
   width: 50%;
 `;
 
+const headerFirst = [
+  { id: 1, label: "Home" },
+  { id: 2, label: "Browse" },
+  { id: 3, label: "Premium" },
+];
+
+const headerLast = [
+  { id: 1, label: "Log In" },
+  { id: 2, label: "Sign Up" },
+];
+
 function Header() {
   const [toggleInput, setToggleInput] = useState(false);
 
@@ -185,21 +203,13 @@ function Header() {
         </LogoImg>
         <NavPrimary>
           <NavList>
-            <NavItem>
-              <AnchorItem href="/" text="Home">
-                Home
-              </AnchorItem>
-            </NavItem>
-            <NavItem>
-              <AnchorItem href="/" text="Browse">
-                Browse
-              </AnchorItem>
-            </NavItem>
-            <NavItem>
-              <AnchorItem href="/" text="Premium">
-                Premium
-              </AnchorItem>
-            </NavItem>
+            {headerFirst.map(({ id, label }) => (
+              <NavItem key={id}>
+                <AnchorItem href="/" text={label}>
+                  {label}
+                </AnchorItem>
+              </NavItem>
+            ))}
           </NavList>
         </NavPrimary>
       </HeaderPrimary>
@@ -214,14 +224,14 @@ function Header() {
             <SearchList isFocus={toggleInput}>
               <div>Helo</div>
             </SearchList>
-            {/* <SearchIcon isFocus={toggleInput} />
-            <Label isfocus={toggleInput}>Search</Label> */}
-            
+            <Placeholders isFocus={toggleInput}>
+              <SearchIcon isFocus={toggleInput} />
+              <Label isFocus={toggleInput}>Search</Label>
+            </Placeholders>
           </SearchWrapper>
           {/* {toggleInput && (
             
           )} */}
-          
         </Form>
       </HeaderSecondary>
       <HeaderTertiary>
@@ -236,16 +246,13 @@ function Header() {
         </Aside>
         <NavTertiary>
           <NavList>
-            <NavItem>
-              <AnchorItem href="/" text="Home">
-                Log In
-              </AnchorItem>
-            </NavItem>
-            <NavItem>
-              <AnchorItem href="/" text="Browse">
-                Sign Up
-              </AnchorItem>
-            </NavItem>
+            {headerLast.map(({ id, label }) => (
+              <NavItem key={id}>
+                <AnchorItem href="/" text={label}>
+                  {label}
+                </AnchorItem>
+              </NavItem>
+            ))}
           </NavList>
         </NavTertiary>
       </HeaderTertiary>
