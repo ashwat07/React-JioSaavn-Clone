@@ -11,6 +11,8 @@ const HeaderMain = styled.header`
   display: flex;
   padding: 0 3px;
   border-bottom: 1px solid #e9e9e9;
+  position: fixed;
+  z-index: 999;
 `;
 
 function Header() {

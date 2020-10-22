@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Sidebar from "./Sidebar";
-import Content from "./Content";
+import Content from "../Content";
 
 const Layout = styled.div`
   display: flex;
