@@ -6,7 +6,7 @@ import Container from "./components/Container";
 const Main = styled.div`
   height: auto;
   max-width: 120rem;
-  overflow: hidden;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
 `;

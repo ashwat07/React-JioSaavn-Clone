@@ -4,7 +4,6 @@ import HeaderPrimary from "./HeaderPrimary";
 import HeaderSecondary from "./HeaderSecondary";
 import HeaderTertiary from "./HeaderTertiary";
 
-
 const HeaderMain = styled.header`
   width: 100%;
   height: auto;
@@ -12,7 +11,8 @@ const HeaderMain = styled.header`
   padding: 0 3px;
   border-bottom: 1px solid #e9e9e9;
   position: fixed;
-  z-index: 999;
+  z-index: 10000;
+  background-color: #f6f6f6;
 `;
 
 function Header() {

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -22,6 +22,6 @@ html, body, #root{
 a {
     text-decoration: none;
 }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;
