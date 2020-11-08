@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./components/Header/Header";
 import Container from "./components/Container";
+import Footer from "./components/Footer";
 
 const Main = styled.div`
   height: auto;
@@ -16,6 +17,7 @@ function App() {
     <Main>
       <Header />
       <Container />
+      <Footer />
     </Main>
   );
 }

@@ -9,6 +9,7 @@ import { IoIosAdd } from "react-icons/io";
 const Wrapper = styled.div`
   flex: 0 0 20%;
   position: relative;
+  z-index: 999;
 `;
 
 const Aside = styled.aside`
@@ -68,16 +69,12 @@ const Btn = styled.div`
 `;
 
 const BtnSpan = styled.span`
-  
   /* padding: 0.8rem; */
   font-size: inherit;
   display: flex;
 `;
 
-const PlusIcon = styled(IoIosAdd)`
-  
-`;
-
+const PlusIcon = styled(IoIosAdd)``;
 
 const navOptions = [
   { id: 1, label: "History", icon: <FaHistory /> },
@@ -106,10 +103,8 @@ function Sidebar() {
         </Nav>
         <Btn>
           <BtnSpan>
-              
-              <PlusIcon />
-                New Playlist
-              
+            <PlusIcon />
+            New Playlist
           </BtnSpan>
         </Btn>
       </Aside>

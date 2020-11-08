@@ -99,4 +99,102 @@ export default [
     img:
       "https://c.saavncdn.com/271/Dil-Ko-Maine-Di-Kasam-Hindi-2020-20200809234001-150x150.jpg?bch=445697",
   },
+  {
+    id: uuidv4(),
+    name: "Anu Malik",
+    category: "Song",
+    img:
+      "https://c.saavncdn.com/editorial/AllAnu_99975717_20171102_150x150.jpg?bch=1586343074",
+  },
+  {
+    id: uuidv4(),
+    name: "Baby Girl",
+    category: "Album",
+    img:
+      "https://c.saavncdn.com/467/Baby-Girl-Hindi-2020-20201005191001-150x150.jpg?bch=445784",
+  },
+  {
+    id: uuidv4(),
+    name: "Mirzapur",
+    category: "Album",
+    img:
+      "https://c.saavncdn.com/695/Mirzapur-Hindi-2020-20201021132549-150x150.jpg?bch=445784",
+  },
+  {
+    id: uuidv4(),
+    name: "Ginny Weds Sunny",
+    category: "Artist",
+    img:
+      "https://c.saavncdn.com/802/Ginny-Weds-Sunny-Hindi-2020-20201002143353-150x150.jpg?bch=445784",
+  },
+  {
+    id: uuidv4(),
+    name: "Ae Mere Dil",
+    category: "Artist",
+    img:
+      "https://c.saavncdn.com/731/Ae-Mere-Dil-Hindi-2020-20201018053248-150x150.jpg?bch=445784",
+  },
+  {
+    id: uuidv4(),
+    name: "Workout - 1 Hour",
+    category: "Album",
+    img:
+      "https://c.saavncdn.com/editorial/Workout1Hour_20200810104541_150x150.jpg?bch=1597077682",
+  },
+  {
+    id: uuidv4(),
+    name: "Tere Naal",
+    category: "Song",
+    img:
+      "https://c.saavncdn.com/481/Tere-Naal-Hindi-2020-20200518044001-150x150.jpg?bch=445784",
+  },
+  {
+    id: uuidv4(),
+    name: "Kabir Singh",
+    category: "Album",
+    img:
+      "https://c.saavncdn.com/181/Care-Ni-Karda-From-Chhalaang--Hindi-2020-20201022111001-150x150.jpg?bch=445697",
+  },
+  {
+    id: uuidv4(),
+    name: "Love Aaj Kal",
+    category: "Album",
+    img:
+      "https://c.saavncdn.com/682/Laxmii-Hindi-2020-20201103181317-150x150.jpg?bch=445697",
+  },
+  {
+    id: uuidv4(),
+    name: "Kabir Singh",
+    category: "Album",
+    img:
+      "https://c.saavncdn.com/099/Teri-Aankhon-Mein-Hindi-2020-20201007061000-150x150.jpg?bch=445697",
+  },
+  {
+    id: uuidv4(),
+    name: "Love Aaj Kal",
+    category: "Album",
+    img:
+      "https://c.saavncdn.com/481/Tere-Naal-Hindi-2020-20200518044001-150x150.jpg?bch=445697",
+  },
+  {
+    id: uuidv4(),
+    name: "Love Aaj Kal",
+    category: "Album",
+    img:
+      "https://c.saavncdn.com/248/Naach-Meri-Rani-Hindi-2020-20201020051001-150x150.jpg?bch=445697",
+  },
+  {
+    id: uuidv4(),
+    name: "Kabir Singh",
+    category: "Album",
+    img:
+      "https://c.saavncdn.com/167/Teri-Hifazat-Hindi-2020-20201022004207-150x150.jpg?bch=445697",
+  },
+  {
+    id: uuidv4(),
+    name: "Love Aaj Kal",
+    category: "Album",
+    img:
+      "https://c.saavncdn.com/271/Dil-Ko-Maine-Di-Kasam-Hindi-2020-20200809234001-150x150.jpg?bch=445697",
+  },
 ];

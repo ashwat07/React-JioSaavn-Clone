@@ -5,7 +5,7 @@ import { BsThreeDots } from "react-icons/bs";
 
 const Img = styled.img`
   border-radius: 5px;
-  height: 100%;
+  height: 90%;
   width: 100%;
   transition: all 0.3s ease-out;
 `;
@@ -20,7 +20,7 @@ const IconsWrapper = styled.div`
 
 const BottomIconsWrapper = styled.div`
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -34,7 +34,6 @@ const PlayIcon = styled(AiFillPlayCircle)`
   color: #fff;
   transition: opacity 0.3s ease-out;
 `;
-
 const HeartIcon = styled(AiOutlineHeart)`
   font-size: 1.3rem;
   color: #fff;
@@ -46,8 +45,8 @@ const HorzIcon = styled(BsThreeDots)`
 `;
 
 const Wrapper = styled.div`
-  max-width: 140px;
-  max-height: 140px;
+  min-width: 140px;
+  min-height: 140px;
   margin-top: 1rem;
   cursor: pointer;
   position: relative;
@@ -60,10 +59,30 @@ const Wrapper = styled.div`
   &:hover ${Img} {
     filter: brightness(40%);
   }
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+`;
+
+const P = styled.p`
+  display: block;
+  text-align: center;
+  font-size: 0.86667rem;
+  line-height: 1.4;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: opacity 0.3s ease-in;
+  background: aliceblue;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;
 
 function SongCard(props) {
-  const { name, category, img } = props;
+  const { name, img } = props;
   return (
     <Wrapper>
       <IconsWrapper>
@@ -74,8 +93,7 @@ function SongCard(props) {
         <HorzIcon />
       </BottomIconsWrapper>
       <Img src={img}></Img>
-      {name}
-      {category}
+      <P>{name}</P>
     </Wrapper>
   );
 }
