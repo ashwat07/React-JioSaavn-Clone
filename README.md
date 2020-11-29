@@ -1,7 +1,7 @@
 # JioSaavn Web UI Clone
 
 ![Image of JioSaavn Clone - 1](https://i.postimg.cc/nc5VbGSp/JioSaavn.png)
-![Image of JioSaavn Clone - 2](https://photos.app.goo.gl/61vPCC1hh3ZzKphr6)
+![Image of JioSaavn Clone - 2](https://i.postimg.cc/N0FWg3Kn/Jio-Saavn1.png)
 
 #### React + Styled-Components
 
