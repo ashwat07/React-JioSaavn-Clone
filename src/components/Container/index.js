@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Sidebar from "../Sidebar";
 import Content from "../Content";
+import FixedQueue from "../FixedQueue";
 
 const Layout = styled.div`
   display: flex;
@@ -14,6 +15,7 @@ function Container() {
     <Layout>
       <Sidebar />
       <Content />
+      <FixedQueue />
     </Layout>
   );
 }
