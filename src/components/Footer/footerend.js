@@ -1,8 +1,8 @@
 import React from "react";
-import { BiDotsHorizontalRounded } from "react-icons/bi";
 import styled from "styled-components";
 import { RiVolumeUpFill } from "react-icons/ri";
 import { CgArrowsExpandRight } from "react-icons/cg";
+import { BiDotsHorizontalRounded } from "react-icons/bi";
 
 const Wrapper = styled.div`
   flex: 0 0 33.33%;
