@@ -2,7 +2,7 @@
 
 #### React + Styled-Components
 
-*Header
-*Sidebar
-*Fixed Queue
-*Responsiveness in progress
+- Header
+- Sidebar
+- Fixed Queue
+- Responsiveness in progress
