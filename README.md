@@ -1,4 +1,4 @@
-# JioSaavn Web UI Clone
+# JioSaavn Web Clone(Only UI)
 
 ![Image of JioSaavn Clone - 1](https://i.postimg.cc/nc5VbGSp/JioSaavn.png)
 ![Image of JioSaavn Clone - 2](https://i.postimg.cc/N0FWg3Kn/Jio-Saavn1.png)
