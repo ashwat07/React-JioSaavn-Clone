@@ -19,3 +19,5 @@ npm install or yarn
 ```
 yarn start or npm start
 ```
+
+## Disclaimer: You would need internet to run this app.
