@@ -7,7 +7,7 @@ const Layout = styled.div`
   right: 0;
   top: 15%;
   height: 70%;
-  width: ${({ isExpand }) => (isExpand ? "450px" : "75px")};
+  width: ${({ isexpand }) => (isexpand ? "450px" : "75px")};
   background-color: #f6f6f6;
   border: 1px solid #e9e9e9;
   border-radius: 8px 0 0 8px;
@@ -30,14 +30,14 @@ const Queue = styled.h4`
 `;
 
 const Horz = styled(BiDotsHorizontalRounded)`
-  display: ${({ isExpand }) => (isExpand ? "block" : "none")};
+  display: ${({ isexpand }) => (isexpand ? "block" : "none")};
   align-self: center;
   font-size: 30px;
   color: #eee;
 `;
 
 const SaveAndClearWrapper = styled.h4`
-  display: ${({ isExpand }) => (isExpand ? "block" : "none")};
+  display: ${({ isexpand }) => (isexpand ? "block" : "none")};
   padding: 10px 10px;
   background-color: #eee;
   color: #fff;
@@ -58,16 +58,18 @@ function FixedQueue() {
 
   return (
     <Layout
-      isExpand={expandQueue}
+      isexpand={expandQueue ? 1 : 0}
       onMouseEnter={handleWidth}
       onMouseLeave={handleWidth}
     >
       <Header>
         <Queue>Queue</Queue>
         <HeaderEnd>
-          <Horz isExpand={expandQueue} />
-          <SaveAndClearWrapper isExpand={expandQueue}>Save</SaveAndClearWrapper>
-          <SaveAndClearWrapper isExpand={expandQueue}>
+          <Horz isexpand={expandQueue ? 1 : 0} />
+          <SaveAndClearWrapper isexpand={expandQueue ? 1 : 0}>
+            Save
+          </SaveAndClearWrapper>
+          <SaveAndClearWrapper isexpand={expandQueue ? 1 : 0}>
             Clear
           </SaveAndClearWrapper>
         </HeaderEnd>
