@@ -10,6 +10,11 @@ const Wrapper = styled.div`
   flex: 0 0 20%;
   position: relative;
   z-index: 999;
+
+  @media (max-width: 1100px) {
+    display: none;
+    transition: display 1s ease-in-out;
+  }
 `;
 
 const Aside = styled.aside`
