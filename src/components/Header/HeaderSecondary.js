@@ -10,6 +10,9 @@ const HeaderSecondaryMain = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 980px) {
+    width: 100%;
+  }
 `;
 
 const Form = styled.form`
@@ -72,6 +75,10 @@ const SearchListWrapper = styled.div`
   transition: all 0.3s ease-in-out 0.3s;
   z-index: 100;
   padding: ${(props) => (props.isfocus ? "1.5rem" : "0rem")};
+
+  @media screen and (max-width: 980px) {
+    width: 100%;
+  }
 `;
 
 const SearchList = styled.div`

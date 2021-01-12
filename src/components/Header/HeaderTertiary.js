@@ -26,6 +26,9 @@ const NavList = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   cursor: pointer;
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 const Angle = styled(FaChevronDown)`
