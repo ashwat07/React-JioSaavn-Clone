@@ -4,8 +4,12 @@ import AppLogo from "./Logo";
 
 const HeaderPrimaryMain = styled.div`
   display: flex;
-  width: 25%;
+  width: 100%;
   margin: 0 5px;
+  /* @media screen and (max-width: 980px) {
+    justify-content: center;
+    align-items: center;
+  } */
 `;
 
 const LogoImg = styled.div`
@@ -13,6 +17,10 @@ const LogoImg = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 980px) {
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const NavPrimary = styled.nav`
@@ -59,8 +67,11 @@ const NavList = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   cursor: pointer;
-`;
 
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
+`;
 
 const headerFirst = [
   { id: 1, label: "Home" },

@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   position: relative;
   z-index: 999;
 
-  @media (max-width: 1100px) {
+  @media screen and (max-width: 1100px) {
     display: none;
     transition: display 1s ease-in-out;
   }
