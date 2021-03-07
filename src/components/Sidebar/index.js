@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
+import { v4 as uuidv4 } from "uuid";
 import { FaHistory, FaPodcast } from "react-icons/fa";
 import { BsMusicNote } from "react-icons/bs";
 import { MdAlbum } from "react-icons/md";
@@ -82,11 +83,11 @@ const BtnSpan = styled.span`
 const PlusIcon = styled(IoIosAdd)``;
 
 const navOptions = [
-  { id: 1, label: "History", icon: <FaHistory /> },
-  { id: 2, label: "Songs", icon: <BsMusicNote /> },
-  { id: 3, label: "Albums", icon: <MdAlbum /> },
-  { id: 4, label: "Podcasts", icon: <FaPodcast /> },
-  { id: 5, label: "Artists", icon: <GiMicrophone /> },
+  { id: uuidv4(), label: "History", icon: <FaHistory /> },
+  { id: uuidv4(), label: "Songs", icon: <BsMusicNote /> },
+  { id: uuidv4(), label: "Albums", icon: <MdAlbum /> },
+  { id: uuidv4(), label: "Podcasts", icon: <FaPodcast /> },
+  { id: uuidv4(), label: "Artists", icon: <GiMicrophone /> },
 ];
 
 function Sidebar() {
