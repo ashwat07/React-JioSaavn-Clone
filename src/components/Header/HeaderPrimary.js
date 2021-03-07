@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import { v4 as uuidv4 } from "uuid";
 import AppLogo from "./Logo";
 
 const HeaderPrimaryMain = styled.div`
   display: flex;
-  width: 100%;
+  width: 28%;
   margin: 0 5px;
-  /* @media screen and (max-width: 980px) {
+  @media screen and (max-width: 980px) {
     justify-content: center;
     align-items: center;
-  } */
+    width: 100%;
+  }
 `;
 
 const LogoImg = styled.div`
@@ -19,7 +21,7 @@ const LogoImg = styled.div`
   align-items: center;
   @media screen and (max-width: 980px) {
     justify-content: center;
-    width: 100%;
+    min-width: 100%;
   }
 `;
 
@@ -74,9 +76,9 @@ const NavList = styled.ul`
 `;
 
 const headerFirst = [
-  { id: 1, label: "Home" },
-  { id: 2, label: "Browse" },
-  { id: 3, label: "Premium" },
+  { id: uuidv4(), label: "Home" },
+  { id: uuidv4(), label: "Browse" },
+  { id: uuidv4(), label: "Premium" },
 ];
 
 function HeaderPrimary() {
