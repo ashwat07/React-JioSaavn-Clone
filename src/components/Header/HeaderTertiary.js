@@ -1,10 +1,14 @@
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
+import { v4 as uuidv4 } from "uuid";
 import styled from "styled-components";
 
 const HeaderTertiaryMain = styled.div`
   display: flex;
   width: 25%;
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 const NavPrimary = styled.nav`
@@ -26,6 +30,9 @@ const NavList = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   cursor: pointer;
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 const Angle = styled(FaChevronDown)`
@@ -84,8 +91,8 @@ const AnchorItem = styled.a`
 `;
 
 const headerLast = [
-  { id: 1, label: "Log In" },
-  { id: 2, label: "Sign Up" },
+  { id: uuidv4(), label: "Log In" },
+  { id: uuidv4(), label: "Sign Up" },
 ];
 
 function HeaderTertiary() {

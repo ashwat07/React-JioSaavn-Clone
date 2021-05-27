@@ -13,6 +13,9 @@ const HeaderMain = styled.header`
   position: fixed;
   z-index: 10000;
   background-color: #f6f6f6;
+  @media screen and (max-width: 980px) {
+    flex-direction: column;
+  }
 `;
 
 function Header() {

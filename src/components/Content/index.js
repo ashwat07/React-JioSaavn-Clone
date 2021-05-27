@@ -7,6 +7,9 @@ const Wrapper = styled.div`
   flex: 1;
   margin-top: 15rem;
   z-index: 0;
+  @media (max-width: 1100px) {
+    margin-left: 2.5rem;
+  }
 `;
 
 const TrendingHeader = styled.h3`
