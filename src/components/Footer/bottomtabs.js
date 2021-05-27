@@ -7,12 +7,25 @@ import { RiUserLine } from "react-icons/ri";
 
 const BottomTabWrapper = styled.div`
   display: flex;
+  min-width: 100%;
 `;
 
-const Home = styled(IoMdHome)``;
-const Search = styled(IoMdSearch)``;
-const Browse = styled(BsCompass)``;
-const Login = styled(RiUserLine)``;
+const Home = styled(IoMdHome)`
+  flex-basis: 25%;
+  font-size: x-large;
+`;
+const Search = styled(IoMdSearch)`
+  flex-basis: 25%;
+  font-size: x-large;
+`;
+const Browse = styled(BsCompass)`
+  flex-basis: 25%;
+  font-size: x-large;
+`;
+const Login = styled(RiUserLine)`
+  flex-basis: 25%;
+  font-size: x-large;
+`;
 
 export default function bottomtabs() {
   return (

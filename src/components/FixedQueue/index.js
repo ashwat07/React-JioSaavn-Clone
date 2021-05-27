@@ -15,6 +15,10 @@ const Layout = styled.div`
   transition: width 300ms ease-out;
   cursor: pointer;
   z-index: 9999;
+
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 const Header = styled.div`
